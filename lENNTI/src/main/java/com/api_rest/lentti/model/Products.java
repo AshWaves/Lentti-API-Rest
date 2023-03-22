@@ -4,10 +4,7 @@
  */
 package com.api_rest.lentti.model;
 
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 import java.io.Serializable;
 import javax.persistence.Basic;
@@ -37,15 +34,20 @@ public class Products implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
     @Column(name = "id_product")
+    @Getter
+    @Setter
     private Integer idProduct;
     @Basic(optional = false)
     @Column(name = "price")
+    @Getter @Setter
     private double price;
     @Basic(optional = false)
     @Column(name = "name")
+    @Getter @Setter
     private String name;
     @Basic(optional = false)
     @Column(name = "company")
+    @Getter @Setter
     private String company;
 
 

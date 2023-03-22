@@ -4,10 +4,7 @@
  */
 package com.api_rest.lentti.model;
 
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 import java.io.Serializable;
 import java.util.Collection;
@@ -37,18 +34,24 @@ public class Users implements Serializable {
     @Id
     @Basic(optional = false)
     @Column(name = "user_document")
+    @Getter
+    @Setter
     private Long userDocument;
     @Basic(optional = false)
     @Column(name = "name")
+    @Getter @Setter
     private String name;
     @Basic(optional = false)
     @Column(name = "phone")
+    @Getter @Setter
     private long phone;
     @Basic(optional = false)
     @Column(name = "password")
+    @Getter @Setter
     private String password;
     @Basic(optional = false)
     @Column(name = "email")
+    @Getter @Setter
     private String email;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "userDocument")
     private Collection<Orders> ordersCollection;
