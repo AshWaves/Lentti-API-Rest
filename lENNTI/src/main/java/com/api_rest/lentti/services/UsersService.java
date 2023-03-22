@@ -25,7 +25,7 @@ public void validation(Users users) throws Exception{
     }if (users.getPhone() == 0){
         throw new BadRequestException("El numero de telefono es obligatorio");
     }if (users.getEmail() == null ){
-        throw  new BadRequestException("El email no puede estar vacion");
+        throw  new BadRequestException("El email no puede estar vacio");
     }
     if("".equals(users.getPassword())||users.getPassword() == null ){
         throw new BadRequestException("La constraseña no puede estar vacia");

@@ -22,10 +22,13 @@ public class UserController {
     public ResponseEntity<Users> findById(@PathVariable("id") long document) throws Exception{
          return  new ResponseEntity<>(usersService.findById(document),HttpStatus.OK);
     }
-    @PostMapping ResponseEntity<Object> insert(@RequestBody Users users) throws Exception{
+    @PostMapping
+    public ResponseEntity<Object> insert(@RequestBody Users users) throws Exception{
       usersService.insert(users);
       return new ResponseEntity<>(HttpStatus.CREATED);
     }
+
+    @PutMapping
     public ResponseEntity<Object> update(@RequestBody Users users) throws Exception{
         usersService.update(users);
         return new ResponseEntity<>(HttpStatus.OK);

@@ -21,6 +21,7 @@
 		</developer>
 		<developer>
 			<name>Jaime andres rivera tabarez</name>
+			<email>jarivera35@misena.edu.co</email>
 		</developer>
 	</developers>
 	<properties>
@@ -61,7 +62,6 @@
 			<version>1.6.15</version>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -70,5 +70,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
