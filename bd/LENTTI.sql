@@ -31,7 +31,7 @@ CREATE TABLE `deliveries` (
   `delivery_document` bigint(20) NOT NULL,
   `name` varchar(100) NOT NULL,
   `phone` bigint(10) NOT NULL,
-  `addres` varchar(40) NOT NULL,
+  `address` varchar(40) NOT NULL,
   `vehicle` varchar(10) NOT NULL,
   `Password` varchar(20) NOT NULL,
   `email` varchar(40) NOT NULL
